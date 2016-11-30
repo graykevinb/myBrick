@@ -32,5 +32,7 @@ def motorStop(port, direction):
     for i in range(0, 2):
         BrickPiUpdateValues()
         BrickPi.MotorSpeed[port] = power
+    BrickPi.MotorSpeed[port] = 0
 
-rotateMotor(55, 70, port)
+#Rotate motor A 360 degrees
+rotateMotor(255, 700, port)
